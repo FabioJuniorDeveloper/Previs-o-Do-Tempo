@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <h1>Previsão do Tempo</h1>
+
+    <form class="busca">
+        <input type="search" id="searchInput" placeholder="Digite o nome da cidade" />
+        <button id="searchBtn">Buscar</button>
+    </form>
+
+    <div class="resultado">
+        <div class="titulo" id="cityName">--</div>
+
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo" id="temperature">-- <sup>ºC</sup></div>
+                <div class="tempMinMax">
+                    <div class="tempMin">Min: <span id="tempMin">-- <sup>ºC</sup></span></div>
+                    <div class="tempMax">Max: <span id="tempMax">-- <sup>ºC</sup></span></div>
+                </div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" id="weatherIcon" />
+                <div class="weatherDescription" id="weatherDescription">--</div>
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo" id="windSpeed">-- <span>km/h</span></div>
+                <div class="ventoAreaCircle">
+                    <div class="ventoTitulo">Direção do Vento</div>
+                    <div class="ventoArea">
+                        <div class="ventoPonto" id="windDirection" style="transform: rotate(0deg)"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="outros">
+                <div class="pressao">
+                    <div class="pressaoTitulo">Pressão</div>
+                    <div class="pressaoInfo" id="pressure">-- <sup>hPa</sup></div>
+                </div>
+                <div class="sensacao-termica">
+                    <div class="sensacaoTitulo">Sensação Térmica</div>
+                    <div class="sensacaoInfo" id="feelsLike">-- <sup>ºC</sup></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso" id="weatherDescription">
+    </div>
+
+    <footer>Criado pelo Fabio</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
